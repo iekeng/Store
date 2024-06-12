@@ -20,6 +20,9 @@ class Command(BaseCommand):
       Permission.objects.get(codename="change_item"),
       Permission.objects.get(codename="delete_item"),
       Permission.objects.get(codename="view_item"),
+      Permission.objects.get(codename="add_supplier"),
+      Permission.objects.get(codename="change_supplier"),
+      Permission.objects.get(codename="update_supplier")
     ]
 
     group.permissions.set(permissions)
