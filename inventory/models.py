@@ -13,13 +13,13 @@ class Item(models.Model):
   def __str__(self):
     return self.name
   
-class Supplier(models.Mode):
+class Supplier(models.Model):
   name = models.CharField(max_length=255)
   contact_info = models.CharField(max_length=255)
   items = models.ManyToManyField(Item)
 
   class Meta:
-    ordering = ["name", "contact"]
+    ordering = ["name", "contact_info"]
 
   def __str__(self):
       return self.name
