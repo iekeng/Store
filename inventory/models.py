@@ -8,7 +8,7 @@ class Item(models.Model):
   created_at = models.DateField(auto_now_add=True)
 
   class Meta:
-    ordering = ["name", "description", "price", "created_at"]
+    ordering = ["name"]
 
   def __str__(self):
     return self.name
@@ -19,7 +19,7 @@ class Supplier(models.Model):
   items = models.ManyToManyField(Item)
 
   class Meta:
-    ordering = ["name", "contact_info"]
+    ordering = ["name"]
 
   def __str__(self):
       return self.name
