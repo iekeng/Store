@@ -13,7 +13,7 @@ class ItemRetrieveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
   queryset = Item.objects.all()
   serializer_class = ItemSerializer
   permission_classes = [IsAuthenticated, DjangoModelPermissions]
-  
+
 class SupplierListCreate(generics.ListCreateAPIView):
   queryset = Supplier.objects.all()
   serializer_class = SupplierSerializer
