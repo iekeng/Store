@@ -11,11 +11,11 @@ class Item(models.Model):
     ordering = ["name", "description", "price", "created_at"]
 
   def __str__(self):
-    return self.nameText
+    return self.name
   
 class Supplier(models.Mode):
   name = models.CharField(max_length=255)
-  contact_info = models.CharField(max_length=30)
+  contact_info = models.CharField(max_length=255)
   items = models.ManyToManyField(Item)
 
   class Meta:
