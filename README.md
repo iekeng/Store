@@ -51,9 +51,12 @@ Complete the task within 2 hours.
 
 inventory/ - project directory  
   ├── models.py - defines the models for inventory items and suppliers  
+  ├── management  
+  │   ├── commands  
+  │   │   ├── create_employee_group  
   ├── views.py - defines the views for the API  
   ├── serializers.py - defines the serializers for the API  
   ├── urls.py - defines the URLs for the API  
   ├── tests.py - defines the tests for the API  
-  ├── requirements.txt - lists the dependencies for the project  
+  ├── requirements.txt - lists the dependencies for the project   
   └── README.md - this file  
