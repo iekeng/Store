@@ -33,6 +33,9 @@ This project is designed to manage the inventory and suppliers for an online sto
 - Basic tests to verify the functionality and reliability of the API.
 - Documentation for setting up the project and interacting with the API.
 
+## API Documentation
+API documentation can be accessed at [127.0.0.1:8000](http://127.0.0.1:8000/).
+
 ## Time Frame
 Complete the task within 2 hours.
 
@@ -42,7 +45,7 @@ Complete the task within 2 hours.
 - **Code Quality**: The code should be clean, efficient, and maintainable.
 - **Documentation**: Provide clear and concise documentation for setup and usage of the API.
 
-## Commands
+## Setup Commands
 
 ```python manage.py makemigrations```  
 ```python manage.py migrate```
@@ -60,3 +63,4 @@ inventory/ - project directory
   ├── tests.py - defines the tests for the API  
   ├── requirements.txt - lists the dependencies for the project   
   └── README.md - this file  
+
