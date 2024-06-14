@@ -2,13 +2,13 @@ from django.core.management.base import BaseCommand
 from django.contrib.auth.models import Group, Permission
 
 class Command(BaseCommand):
-  help = "Create staff group with specific permissions"
+  help = "Create employee group with specific permissions"
 
   def handle(self, *args, **options):
-    staff_group, created = Group.objects.get_or_create(name="Staff")
+    staff_group, created = Group.objects.get_or_create(name="Employee")
 
     if created:
-      self.stdout.write(self.style.SUCCESS("Successfully created Staff group"))
+      self.stdout.write(self.style.SUCCESS("Successfully created Employee group"))
     else:
       self.stdout.write(self.style.WARNING("Staff group already exists"))
 
