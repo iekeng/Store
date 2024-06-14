@@ -57,7 +57,7 @@ inventory/ - project directory
   ├── models.py - defines the models for inventory items and suppliers  
   ├── management  
   │   ├── commands  
-  │   │   ├── create_employee_group  
+  │   │   ├── create_employee_group_and_permissions
   ├── views.py - defines the views for the API  
   ├── serializers.py - defines the serializers for the API  
   ├── urls.py - defines the URLs for the API  
