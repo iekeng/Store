@@ -46,9 +46,10 @@ Complete the task within 2 hours.
 - **Documentation**: Provide clear and concise documentation for setup and usage of the API.
 
 ## Setup Commands
-
+These setup commands are run in the Store/ directory where the manage.py file
 ```python manage.py makemigrations```  
 ```python manage.py migrate```
+```python manage.py test```
 ```python manage.py create_employee_group``` - custom management tool to create employee group and apply the necessary permissions  
 ```python manage.py runserver``` - run server on localhost, port 8000 (http://127.0.0.1:8000)  
 
