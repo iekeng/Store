@@ -37,7 +37,7 @@ This project is designed to manage the inventory and suppliers for an online sto
 API documentation can be accessed at [127.0.0.1:8000](http://127.0.0.1:8000/).
 
 ## Time Frame
-Complete the task within 2 hours.
+Complete the task within 3 days.
 
 ## Evaluation Criteria
 - **Understanding of Requirements**: Ability to interpret business needs and design a functional system with relational data models.
@@ -45,23 +45,40 @@ Complete the task within 2 hours.
 - **Code Quality**: The code should be clean, efficient, and maintainable.
 - **Documentation**: Provide clear and concise documentation for setup and usage of the API.
 
+## Technology Used  
+This project uses Django Rest Framework to manage the API and its interactions with the inventory and supplier data.
+    
 ## Setup Commands
-These setup commands are run in the Store/ directory where the manage.py file  
-```python manage.py makemigrations```  
-```python manage.py migrate```  
-```python manage.py test```  
-```python manage.py create_employee_group``` - custom management tool to create employee group and apply the necessary permissions   
-```python manage.py runserver``` - run server on localhost, port 8000 (http://127.0.0.1:8000)   
+1. Create and Apply Migrations:  
+  `python manage.py makemigrations`   
+  `python manage.py migrate`
 
-inventory/ - project directory  
+2. Create Employee Group and Permissions:  
+  `python manage.py create_employee_group`  
+  This custom management script located in the management/commands folder runs when the command is run, creating employee group and applying the necessary permissions.  
+
+3. Run Server:  
+  `python manage.py runserver`   
+  Runs server on localhost, port 8000 (http://127.0.0.1:8000)   
+
+## App directory  - inventory/
   ├── models.py - defines the models for inventory items and suppliers  
   ├── management  
   │   ├── commands  
-  │   │   ├── create_employee_group_and_permissions
+  │       ├── create_employee_group_and_permissions
   ├── views.py - defines the views for the API  
   ├── serializers.py - defines the serializers for the API  
   ├── urls.py - defines the URLs for the API  
   ├── tests.py - defines the tests for the API  
   ├── requirements.txt - lists the dependencies for the project   
   └── README.md - this file  
+
+The project directory inventory contains the following files:  
+`models.py`: Defines the models for inventory items and suppliers.  
+`create_employee_group_and_permission`s: A custom management tool to create an employee group and apply the necessary permissions.  
+`views.py`: Defines the views for the API.  
+`serializers.py`: Defines the serializers for the API.  
+`urls.py`: Defines the URLs for the API.  
+`tests.py`: Defines the tests for the API.  
+`requirements.txt`: Lists the dependencies for the project.  
 
